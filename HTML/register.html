@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b14ec5cd6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>YouYoga Register</title>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+        <img src="../Logo.svg" class="logo">
+        <ul class="navbar">
+            <a href="../HTML/home.html"><li class="navItem">Home</li></a>
+            <li class="navItem underline">Register</li>
+            <a href="../HTML/classes.html"><li class="navItem">Classes</li></a>
+            <a href="../HTML/contact.html"><li class="navItem">Contact Us</li></a>
+        </ul> 
+        <div class="rightNav lightgreyText">
+            <input placeholder="Search..." class="searchItem">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>   
+    </nav>
+    
+    <!-- REGISTRATION FORM -->
+    <form action="../HTML/confirmation.html" class="RegistrationForm"> 
+        <h2 class="RegisterTitle"><span class="greenText">Register</span><span class="darkgreyText"> with us</span></h2>
+        <div class="PersonalDetails">
+            <input type="text" placeholder="First Name*" required>
+            <input type="text" placeholder="Last Name*" required>
+            <input type="email" placeholder="Email Address*" required>
+            <div class="dob">
+                <label for="dob" class="darkgreyText">Date of Birth*</label>
+                <input type="date" name="dob" class="darkgreyText" required>
+            </div>
+        </div>
+            <div class="StudioLocation darkgreyText">
+                <label for="StudioLocation">Pick your preferred studio location*</label>
+                <input list="StudioLocation" required>
+                    <datalist id="StudioLocation">
+                        <option value="Friedrichshain">
+                        <option value="Wedding">
+                        <option value="Kreuzberg">
+                        <option value="Mitte">
+                        <option value="Prenzlauerberg">
+                    </datalist>
+            </div>
+            <div class="NewsletterOption darkgreyText">
+                <label for="NewsletterOption">Would you like to start receiving our monthly newsletter?</label>
+                <input type="radio" class="radioOption" required name="NewsletterOption" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" class="radioOption" name="NewsletterOption" value="No">
+                <label for="no">No</label>
+            </div>
+        </div>
+        <div class="TermsandConditions darkgreyText">
+            <h2>Terms and Conditions</h2>
+            <ol type="1">
+                <li>Level 1</li>
+                <ol type="a">
+                    <li>a. termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions.</li>
+                    <li>b. bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB djhdb dsjhdbj dsahjba adhbj sdajhbdj bewjd jbdajbd jbfdjf  hsfbfhj sjbfj sfhjbj sdjbj sjfbjk sfjbj jhbfsj jbafj  jhbjsbfjksafb jbjjbdaj jbdjaskbdk kadnnnd jsfbsjbffb jbjbj jhbjbb hvgchgc hvhvvhgc hvhvghhchcc.</li>
+                </ol>
+                <li>Level 2</li>
+                <ol type="a">
+                    <li>a. bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB.</li>
+                    <li>b. bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB bcdhjcb hsdbjhfbwsj dhsbcdsjhfb jhsdbsjbjdh  jbjsdbjdb bhjbdjsb bhjfdbdsjb fbdjafjbf dshcbshj adsbajDB.</li>
+                    <li>c. termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions termsandconditions.</li>
+                </ol>
+            </ol>
+            <div class="AgreementClause">
+                <input type="checkbox" class="checkBox" name="t&c" required>
+                <label for="t&c">*I hereby confirm that I have read, understood and agree to be bound by these terms and conditions.</label><br>
+            </div>
+        </div>
+        <input type="submit" class="whiteButton">
+    </form>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="upper-footer">
+        <img src="../logo-footer.svg" class="logo-footer">
+        <ul>
+            <h3>Organisation</h3>
+            <li>Our team</li>
+            <li>Sponsors</li>
+            <li>Careers</li>
+        </ul>
+        <ul>
+            <h3>Resources</h3>
+            <li>Blog</li>
+            <li>Events</li>
+            <li>FAQs</li>
+        </ul>
+        <ul class="newsletter">
+            <h3>Newsletter</h3>
+            <input placeholder="Email address" class="inputfield lightgreyTextbox">
+            <button class="SubscribenowButton">Subscribe now!</button>
+            <div class="socialmedia">
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </ul>
+    </div>
+    <div class="down-footer">
+        <p>&#169; 2022 KBCAB Studios. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

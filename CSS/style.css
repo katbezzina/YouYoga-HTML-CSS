@@ -1,0 +1,525 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.greenText{
+    color:#2DBEA2;
+}
+
+.darkgreyText{
+    color: #656262;
+}
+
+.lightgreyText{
+    color: #9c9b9b;
+}
+
+/* NAVIGATION */
+
+.navigation{
+    width: 100vw;
+    height: 10vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+
+.navbar li{
+    font-size: 16px;
+    font-weight: 490;
+    color: #7d7a7a;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.underline{
+    border-bottom: 2px solid #2DBEA2;   
+}
+
+.navItem:hover{
+    transition: 0.1s ease;
+    color: #2DBEA2;
+    cursor: pointer;
+}
+
+.searchItem{
+    width: 140px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 2px;
+    border: 0.2px solid #7f7c7c79;
+    font-size: 12px;
+    font-weight: 100;
+    text-indent: 10px;
+    background-color: rgba(255, 255, 255, 0.831);
+}
+
+.searchItem::placeholder{
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navigation i{
+    font-size: 20px;
+    color: #7d7a7a;
+}
+
+.navigation i:hover{
+    transition: 0.2s ease;
+    color: #2DBEA2;
+    cursor: pointer;
+}
+
+/* HOME SECTION */
+
+.homeSection{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+.leftContainer{
+    width: 28vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title{
+    font-size: 65px;
+}
+
+.description{
+    font-size: 16px;
+    margin-top: -12px;
+}
+
+.FrontPageButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.RegisterButton{
+    width: 150px;
+    height: 50px;
+    border: 3px solid #2DBEA2;
+    background-image: linear-gradient(45deg, #2dbea1, #eaa4e0);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.RegisterButton:hover{
+    background-color: #2dbea1ab;
+    box-shadow: 2px 2px 10px 2px #2dbea1a8;
+    transition: 0.2s ease;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.whiteButton{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.902);
+    color: #269d85;
+    border-radius: 10px;
+    border: 3px solid #2DBEA2;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.whiteButton:hover{
+    box-shadow: 2px 2px 10px 2px #2dbea1a8;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.image{
+    width: 40vw;
+    height: auto;
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #ffffffea;
+}
+
+.upper-footer{
+    width: 100vw;
+    height: auto;
+    background-color: #2dbea1d8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.upper-footer li:hover{
+    transition: 0.2s ease;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h3{
+    color: rgba(255, 255, 255, 0.831);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.logo-footer{
+    width: 120px;
+    height: auto;
+    padding: 10px;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputfield{
+    height: 40px;
+    width: 200px;
+}
+
+.inputfield::placeholder{
+    font-size: 14px;
+    color: #afaeae;
+}
+
+.lightgreyTextbox {
+    border-radius: 10px;
+    border: none;
+    font-weight: 100;
+    text-indent: 10px;
+    color: #afaeae;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+
+.SubscribenowButton{
+    height: 40px;
+    width: 200px;
+    background-image: linear-gradient(45deg, #2dbea1, #eaa4e0);
+    border: 2px solid rgba(255, 255, 255, 0.692);
+    color: rgba(255, 255, 255, 0.89);
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.SubscribenowButton:hover{
+    transition: 0.2s ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 5px #f9f9f977;
+}
+
+.socialmedia{
+    font-size: 30px;
+    gap: 10px;
+}
+
+.socialmedia i:hover{
+    transition: 0.2s ease;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 2px  #f9f9f98a;
+}
+
+.down-footer{
+    width: 100vw;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: smaller;
+    background-color: #2dbea1;
+}
+
+/* CONTACT */
+
+.contactpage{
+    width: 100vw;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-field{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 600px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    gap: 5px;
+    background-image: linear-gradient(180deg, #2dbea1e3, #175549c4);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.831);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contact-form h2{
+    color: rgba(255, 255, 255, 0.831);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.logo-contact{
+    width: 90px;
+    height: auto;
+}
+
+.EmailAddress{
+    color: rgba(255, 255, 255, 0.831);
+}
+
+iframe{
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+}
+
+/* REGISTRATION FORM*/
+
+.RegistrationForm{
+    background-color: #2dbea134;
+    border-radius: 20px;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15vw;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+.PersonalDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input::placeholder{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.PersonalDetails input{
+    height: 25px;
+    width: 500px;
+    border: 1px solid rgba(104, 101, 101, 0.692);
+    font-weight: 350;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dob{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.StudioLocation input{
+    height: 20px;
+    width: 244px;
+    border: 1px solid rgba(104, 101, 101, 0.692);
+    font-weight: 350;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.radioOption{
+    accent-color: #2DBEA2;
+}
+
+.TermsandConditions{
+    width: 60vw;
+    height: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+ol li{
+    text-indent: -1.2em;
+}
+
+.AgreementClause{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.checkBox{
+    accent-color: #2DBEA2;
+}
+
+/* CLASSES */
+
+.MainClassesDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.BenefitsGrid{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.darkgreenCircle{
+    background-color: #29af94;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.lightgreenCircle{
+    background-color:#2dbea19a;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.greyCircle{
+    background-color:#7d7a7ac9;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.item:hover{
+    transition: 0.1s ease;
+    background-color: #eaa4e0bf;
+    cursor: pointer;
+}
+
+.ClassesPreview{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ClassesTable{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+th{
+    position: sticky;
+    top: 0;
+    background-color: #2dbea1fb;
+    border-radius: 10px;
+    color: white;
+}
+
+th, tr, td{
+    padding: 15px;
+}
+
+tr:hover{
+    transition: 0.1s ease;
+    background-color: #2dbea126;
+    cursor: pointer;
+}
+
+/* CONFIRMATION PAGE */
+
+.ConfirmationPage h1{
+    font-size: 40px;
+}
+
+.ConfirmedIcon{
+    font-size: 120px;
+    color:#29af94b8; 
+}
+
+.ConfirmationPage p{
+    font-size: 20px;
+}
+
+.ConfirmationPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    border-top: 2px solid #269d85d5;
+    border-bottom: 2px solid #269d85d5;
+    border-radius: 20px;
+    background-color: #2dbea10e;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 80px;
+}
+
+.GoBack{
+    font-weight: 400;
+    width: 50px;
+    border-radius: 30px;
+}
